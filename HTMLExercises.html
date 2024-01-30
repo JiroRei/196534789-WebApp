@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>HTML Exercises</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>(Place company logo here, intern)</h1>
         <nav class="Navbar">
-                <h1><a href="#Home">Home</a></h1>
-                <h1><a href="#About">About Us</a></h1>
-                <h1><a href="#Contact">Contact</a></h1>
+            <ul>
+                <h1>(Place company logo here, intern)</h1>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="Home" id="Home">
@@ -18,13 +22,11 @@
         <p>Now Hiring!!</p>
     </section>
     <section class="About" id="About">
-        <img src="">
-        <table border="1" cellspacing="1" cellpadding="5" width="200">
             <h2>About Us</h2>
-            <h4>We are a company focused on developing cutting edge technology. Located in Chingchong China.<br>
+            <p>We are a company focused on developing cutting edge technology. Located in <span>[REDACTED]</span><br>
                 We provide IT and CS solutions using modern and high tech methods.<br>
-                <span>ADD MORE HERE INTERN!!</span></h4>
-            
+                ADD MORE HERE INTERN!!</p>
+        <table>
             <tr>
                 <th>Name</th>
                 <th>Age</th>
@@ -43,10 +45,9 @@
         </table>
         <h3>Pictures fo the office</h3>
         <figure>
-            <img src="https://hwbusters.com/wp-content/uploads/2023/08/pcgaming-e1693241996879.jpg" height="400" width="400">
-            <figcaption>Office Space</figcaption>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Decrepit_Building_In_Chania_%28234359829%29.jpeg/450px-Decrepit_Building_In_Chania_%28234359829%29.jpeg?20180804194836" height="400" width="400">
-            <figcaption>Located here in this building. Basement 1 level</figcaption>
+            <img src="https://hwbusters.com/wp-content/uploads/2023/08/pcgaming-e1693241996879.jpg" alt="Office" height="400" width="400">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Decrepit_Building_In_Chania_%28234359829%29.jpeg/450px-Decrepit_Building_In_Chania_%28234359829%29.jpeg?20180804194836" alt="Building" height="400" width="400">
+            <figcaption>Office Space(1) Located here in this building(2). Basement 1 level</figcaption>
         </figure>
     </section>
     <section class="Contact" id="Contact">
@@ -60,18 +61,20 @@
             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
             <p>Sex:</p>            
             <input type="radio" id="m" name="sex" value="M" required>
-            <label for="Gender">Male</label><br>    
+            <label for="m">Male</label><br>    
             <input type="radio" id="f" name="sex" value="F" required>
-            <label for="Gender">Female</label><br><br>
+            <label for="f">Female</label><br><br>
             <input type="checkbox" id="tnc" name="termscheck" value="T&C" required>
-            <label for="terms">I agree to the <a href="#">terms and conditions.</a></label><br><br>
+            <label for="tnc">I agree to the <a href="#">terms and conditions.</a></label><br><br>
             <input type="submit" value="Submit">
           </form>
     </section>
+    <section id="Map">
+        <iframe id="gmap" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=Pitcairn+Island,+Pitcairn+Islands&key=..."></iframe>
+    </section>
     <footer>
-        <div>
-            <h4>ADD FOOTER ELEMENTS HERE INTERN! THE LOGO AND OTHER LEGAL STUFF...</h4> 
-        </div>
+            <p>ADD FOOTER ELEMENTS HERE...</p>
     </footer>
 </body>
 </html>

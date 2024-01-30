@@ -1,0 +1,52 @@
+.navbar{
+    display: inline-block;
+}
+.about{
+    margin: 100px;
+}
+h1{
+    display: inline-block;
+    text-align: right;
+    margin: 0%;
+    margin-top: 10px;
+    color: gray;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+    float: left;
+}
+  
+li a {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+span{
+    font-weight: bold;
+}
+table{
+    border: 1px solid;
+    padding: auto;
+    width: 100%;
+    }
+th{
+    border: 0.5px solid;
+}
+td{
+    border: 0.5px solid;
+}
+#Map{
+    border: 1px solid;
+    width: 50%;
+}
+#gmap{
+    width: 100%;
+}
